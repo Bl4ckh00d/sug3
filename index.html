@@ -1339,7 +1339,24 @@
                 <!-- ==========   End Work ========== -->
 
 
-<iframe src="https://bl4ckh00d.github.io/custom-tee/" title="custom tee" height="500" width="500" ></iframe>
+ <iframe style="width: 100%;border:3px solid black;" src="https://bl4ckh00d.github.io/custom-tee/" id="Iframe"></iframe>
+        <!--iframe tag-->
+        
+        <script>
+            // Selecting the iframe element
+            var frame = document.getElementById("Iframe");
+            
+            // Adjusting the iframe height onload event
+            frame.onload = function() {
+                // set the height of the iframe as 
+                // the height of the iframe content
+                frame.style.height = frame.contentWindow.document.body.scrollHeight + 'px';
+
+                // set the width of the iframe as the 
+                // width of the iframe content
+                frame.style.width  = frame.contentWindow.document.body.scrollWidth + 'px';
+            }
+        </script>
 		 <!-- ==========   Custom tshirt addon ========== -->		
 <section class="dsn-cards-post-2 section-padding background-section">			
 			<div class="container">			
